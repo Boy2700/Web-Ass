@@ -1,10 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    font-size: 16px;
 }
 
 .container {
-    width: 50%;
+    max-width: 500px;
     margin: 40px auto;
     padding: 20px;
     background-color: #fff;
@@ -16,6 +17,8 @@ body {
 h1 {
     text-align: center;
     color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -25,6 +28,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 input[type="text"], input[type="date"], select {
@@ -34,6 +38,7 @@ input[type="text"], input[type="date"], select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 input[type="radio"] {
@@ -45,7 +50,7 @@ input[type="checkbox"] {
 }
 
 button[type="submit"] {
-    width: 50%;
+    width: 100px;
     height: 40px;
     background-color: #4CAF50;
     color: #fff;
@@ -53,9 +58,9 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-   
-    justify-content: center;
-
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
 }
 
 button[type="submit"]:hover {
@@ -75,5 +80,27 @@ button[type="submit"]:hover {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"], input[type="date"], select {
+        height: 30px;
+        font-size: 14px;
+    }
+    button[type="submit"] {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
     }
 }
